@@ -1,0 +1,145 @@
+<%= title 'Omega Solutions Corner' %>
+
+<div class="container-fluid">
+  <div class="row" style="padding-top:8%; background-image: url(/assets/hd2.jpg); background-repeat: repeat-x;z-index:4;background-position: 30% 20%;height:300px;">
+    <div class="col-sm-3"></div>
+    <%= form_tag("search", method: "get", id: "searchform") do %>
+    <div class="col-sm-6">
+     <div class="form-group">
+     <div class="col-xs-10" style="padding-right:2px;z-index:1">
+    <%= autocomplete_field_tag :query, params[:query], autocomplete_product_name_path, autofocus: true, placeholder:"Search products or stores",class: 'form-control',:style=>"height:50px;" %>
+    </div>
+    <div class="col-xs-2" style="padding-left:0;z-index:1">
+    <%= submit_tag "Search", class: "btn btn-primary btn-lg" %></div>
+    </div>
+    </div>  <!--col-sm- 6 -->
+   <% end %>
+    <div class="col-sm-3" style="padding:0"></div>
+</div> <!--row -->
+
+  <div class="row" style="background-color:#0D69AF;">
+     <div class="hidden-xs col-md-4 col-sm-6 "></div>
+       <div class="col-xs-12 col-sm-6 col-md-4"><h1 style="Times New Roman, Times, serif;color:#fff;font-weight:bold;">Solutions World is here </h1></div>
+     <div class="hidden-xs col-md-4 col-sm-6 "></div>
+  </div>
+ <div class="row" style="background-color:#0D69AF;width:100%;">
+    <div class="hidden-xs col-md-3 col-sm-6 "></div> 
+    <div class="col-xs-12 col-sm-6 col-md-3" >
+    <div style="width:290px; text-align:right;">
+     <%= link_to "maths", :style => "text-decoration:none;" do %><%= image_tag("retail.jpeg",:style=>"border-radius:5px;box-shadow:0 0 3px #000;width:290px;height:190px;opacity: 0.65;filter: alpha(opacity=40);") %><span style="position:relative;top:-55px;padding:2px 6px;border-radius:20px;box-shadow:0 0 25px 1px #000 inset;box-shadow:0 0 5px #000;text-shadow:0 0 5px #000;font-size:28px;color:#fff;font-weight:bold">Maths</span><% end %>
+     </div></div>
+   
+     <div class="col-xs-12 col-sm-6 col-md-3" >
+      <div style="width:290px; text-align:right;">
+     <%= link_to "physics", :style => "text-decoration:none;" do %><%= image_tag("eatery.jpeg",:style=>"border-radius:5px;box-shadow:0 0 3px #000;width:290px;height:190px;opacity: 0.65;filter: alpha(opacity=40);") %><span style="position:relative;top:-55px;padding:2px 6px;border-radius:20px;box-shadow:0 0 25px 1px #000 inset;box-shadow:0 0 5px #000;text-shadow:0 0 5px #000;font-size:28px;color:#fff;font-weight:bold">Physics</span><% end %>
+     </div></div>
+
+    <div class="hidden-xs col-md-3 col-sm-6 "></div> 
+</div>
+   <div class="row" style="background-color:#0D69AF;width:100%;">
+     <div class="hidden-xs col-md-3 col-sm-6 "></div> 
+
+     <div class="col-xs-12 col-sm-6 col-md-3" >
+     <div style="width:290px; text-align:right;">
+     <%= link_to "chemistry", :style => "text-decoration:none;" do %><%= image_tag("wholesale.jpeg",:style=>"border-radius:5px;box-shadow:0 0 3px #000;width:290px;height:190px;opacity: 0.65;filter: alpha(opacity=40);") %><span style="position:relative;top:-55px;padding:2px 6px;border-radius:20px;box-shadow:0 0 25px 1px #000 inset;box-shadow:0 0 5px #000;text-shadow:0 0 5px #000;font-size:28px;color:#fff;font-weight:bold">Chemistry</span><% end %>
+     </div></div>
+
+     <div class="col-xs-12 col-sm-6 col-md-3" >
+     <div style="width:290px; text-align:right;">
+     <%= link_to "problem world", :style => "text-decoration:none;" do %><%= image_tag("logistics.jpeg",:style=>"border-radius:5px;box-shadow:0 0 3px #000;width:290px;height:190px;opacity: 0.65;filter: alpha(opacity=40);") %><span style="position:relative;top:-55px;padding:2px 6px;border-radius:20px;box-shadow:0 0 25px 1px #000 inset;box-shadow:0 0 5px #000;text-shadow:0 0 5px #000;font-size:28px;color:#fff;font-weight:bold">Problems</span><% end %>
+     </div></div>
+      <div class="hidden-xs col-md-3 col-sm-6 "></div>
+  </div>
+
+<div class="jumbotron">
+ <div class="row" >
+  <div class="col-md-4 hidden-xs col-lg-4 ">
+    <span style= "font-size:20px;font-style:bold;font-weight:bold; text-align:center; font-family:Times New Roman, Times, serif;">Trust</span><br/><br/>
+    <p style="position:absolute;margin-left:58px;font-size:28px;font-weight:bold;">Love u here,bitches</p>
+  </div>
+  <div class="col-md-4 hidden-xs col-lg-4 ">
+    <span style= "font-size:20px;font-style:bold;font-weight:bold; text-align:center; font-family:Times New Roman, Times, serif;">Flow</span><br/><br/>
+     <p style="position:absolute;margin-left:48px;font-size:28px;font-weight:bold;">I have two animals to beat<p>
+  </div>
+  <div class="col-md-4 hidden-xs col-lg-4 ">
+    <span style= "font-size:20px;font-style:bold;font-weight:bold; text-align:center; font-family:Times New Roman, Times, serif;">Commitment</span><br/><br/>
+    <p style= "font-size:20px;font-weight:bold;color:#006994;font-size:28px;font-weight:bold;">Delhi & NCR</p>
+  </div>
+ </div>
+</div><!--jumbotron-->
+
+ <div class="row">
+   <%= image_tag("rphg1.jpg", :class =>"img-responsive hidden-xs",alt: "Logo_Missing",:style =>"z-index:1;opacity:0.70;") %>
+ </div>
+ <div class="row hidden-xs" style="background-color:#0D69AF;">
+  <div class="col-md-1 col-lg-4 ">&nbsp</div>
+   <div class="col-lg-6 col-md-10"><h1 style="Times New Roman, Times, serif;color:#fff;font-weight:bold;">What Sellers Say </h1>
+   </div>
+  <div class="col-md-1 col-lg-4 ">&nbsp</div>
+  </div>
+ <div class="row hidden-xs" style="height:400px;background-color:#0D69AF;">
+  <div class="col-md-1 col-lg-2 ">&nbsp</div>
+   <div class="col-lg-8 col-md-10">
+     <div class="row">
+      <div class="col-lg-3 col-md-3" style="margin-top:20px;">
+          <%= image_tag("logistics.jpeg", :class =>"img-responsive img-circle",alt: "Logo_Missing",:style =>"z-index:1;opacity:0.70;") %>
+           <span style="font-size:20px;font-family:Times New Roman, Times, serif;font-weight:bold;color:#fff;">Anthony Walker 1</span>
+       </div>
+      <div class="col-lg-3 col-md-3" style="margin-top:20px;">
+          <%= image_tag("logistics.jpeg", :class =>"img-responsive img-circle",alt: "Logo_Missing",:style =>"z-index:1;opacity:0.70;") %>
+           <span style="font-size:20px;font-family:Times New Roman, Times, serif;font-weight:bold;color:#fff;">Anthony Walker 2</span>
+       </div>
+      <div class="col-lg-3 col-md-3" style="margin-top:20px;">
+          <%= image_tag("logistics.jpeg", :class =>"img-responsive img-circle",alt: "Logo_Missing",:style =>"z-index:1;opacity:0.70;") %>
+           <span style="font-size:20px;font-family:Times New Roman, Times, serif;font-weight:bold;color:#fff;">Anthony Walker 3</span>
+       </div>
+      <div class="col-lg-3 col-md-3" style="margin-top:20px;">
+          <%= image_tag("logistics.jpeg", :class =>"img-responsive img-circle",alt: "Logo_Missing",:style =>"z-index:1;opacity:0.70;") %>
+           <span style="font-size:20px;font-family:Times New Roman, Times, serif;font-weight:bold;color:#fff;">Anthony Walker 4</span>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 col-lg-2 ">&nbsp</div>
+   <!--div class="imgWrap">
+    <%= image_tag("logistics.jpeg", :class =>"img-responsive",alt: "Logo_Missing",:style =>"z-index:1;") %>
+    <p class="imgDescription">This image looks super neat.</p>
+</div-->
+ </div>
+
+
+</div><!--COntainer-->
+<style>
+ .imgWrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}</style>
+<script>
+$('#query').bind('railsAutocomplete.select', function(event, data){
+  $('#searchform').submit();
+});
+</script>
