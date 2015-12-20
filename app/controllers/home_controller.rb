@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   autocomplete :product, :name, :full => true
+
   def index
     #@products = PgSearch.multisearch(params[:query]).page(params[:page]).per_page(20)
   end
@@ -9,13 +10,13 @@ class HomeController < ApplicationController
     @seller_near = Store.near(params[:location], 500)
   end
 
-  def help
+  def maths
   end
 
-  def rnd
+  def physics
   end
 
-  def about
+  def chemistry
   end
 
   def setlocat
