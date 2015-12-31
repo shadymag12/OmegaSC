@@ -1,4 +1,5 @@
 <%= title 'Physics Corner' %>
+<%= render 'layouts/homeheader' %>
 
 <div class="container-fluid">
 
@@ -7,45 +8,120 @@
    <div class="col-md-6"><h1 style="text-shadow: 4px 4px 4px #aaa;"><u>H.C Verma Solved</h1></u></div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8" style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 1-"abracadabra"</span></u></div>
+   <div class="col-md-8" style="background-color:#eeffee;">
+   <div class="flip">Chapter-1</div>
+   <div class="panel"><a href="#" data-toggle = "modal" data-target= "#modalcart" data-type= "html"><h3>Problem-1</h3></a>
+   <div class="modal fade" id="modalcart">
+    <div class="modal-dialog modal-lg">
+    <div class="modal-content"  style="padding:40px">
+     <iframe width="420" height="315"
+       src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
+     </iframe>
+   </div>
+  </div>
+</div>
+    <hr>
+      <a href="#modalcart" data-toggle = "modal"  data-type= "html"><h3>Problem-2</h3></a>
+      <div class="modal fade" id="modalcart">
+        <div class="modal-dialog modal-lg">
+         <div class="modal-content"  style="padding:40px">
+        <iframe width="420" height="315"
+          src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
+        </iframe>
+        </div>
+     </div>
+   </div>
+
+ </div><!--panel-->
+
+ </div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8" style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 2-"abracadabra"</u></span></div>
+   <div class="col-md-8" style="background-color:#eeffee;"><div class="flip">Chapter-2</div>
+   <div class="panel">Hello world!</div>
+  </div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8"style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 3-"abracadabra"</u></span></div>
+   <div class="col-md-8"style="background-color:#eeffee;"><div class="flip">Chapter-3</div>
+   <div class="panel">Hello world!</div>
+   </div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8"style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 4-"abracadabra"</u></span></div>
+   <div class="col-md-8"style="background-color:#eeffee;"><div class="flip">Chapter-4</div>
+   <div class="panel">Hello world!</div>
+   </div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8" style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 5-"abracadabra"</u></span></div>
+   <div class="col-md-8" style="background-color:#eeffee;"><div class="flip">Chapter-5</div>
+   <div class="panel">Hello world!</div>
+  </div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8" style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 6-"abracadabra"</u></span></div>
+   <div class="col-md-8" style="background-color:#eeffee;"><div class="flip">Chapter-6</div>
+   <div class="panel">Hello world!</div>
+   </div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8" style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 7-"abracadabra"</u></span></div>
+   <div class="col-md-8" style="background-color:#eeffee;"><div class="flip">Chapter-7</div>
+   <div class="panel">Hello world!</div>
+   </div>
    <div class="col-md-2">&nbsp</div>
  </div>
+
  <div class="row" style="background-color:#CBE32D;">
   <div class="col-md-2">&nbsp</div>
-   <div class="col-md-8" style="background-color:#eeffee;"><span style="font-color:#fff;font-weight:bold;font-family:Alegreya, Times, serif;"><u>Chapter 8-"abracadabra"</u></span></div>
+   <div class="col-md-8" style="background-color:#eeffee;">
+    <div class="flip">Chapter-8</div>
+    <div class="panel">Hello world!</div>
+   </div>
    <div class="col-md-2">&nbsp</div>
  </div>
  
 </div>
+<script> 
+$(document).ready(function(){
+    $(".flip").click(function(){
+        $(this).nextAll('.panel').first().toggle('slow');
+    });
+});
+</script>
+
+<style> 
+.panel, .flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    width:auto;
+    height:auto;
+}
+
+.panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
+ 
+

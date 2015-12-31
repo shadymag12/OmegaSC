@@ -16,8 +16,7 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse" style="overflow-x:hidden">  
 <ul class="nav navbar-nav navbar-right" style="font-size:13px">
   <li class="pull-left" style="font-size:12px">
-  <a href="#" data-toggle = "modal" data-target= "#modalcart" data-type= "html"><h3>Problem-1</h3></a>
-    <span class="glyphicon glyphicon-map-marker"></span><strong> Your Location: </strong><br/>
+  <%= link_to cart_path,{ :remote => true, 'data-toggle' =>  "modal", 'data-target' => "#modallocat", 'data-type' => "html" } do %><span class="glyphicon glyphicon-map-marker"></span><strong> Your Location: </strong><br/><%= locat %><% end %>
   </li>
  <% if user_signed_in? %>
  <li class="dropdown pull-left">

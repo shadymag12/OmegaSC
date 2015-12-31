@@ -36,7 +36,7 @@
 
     <div class="hidden-xs col-md-3 col-sm-6 "></div> 
 </div>
-   <div class="row" style="background-color:#0D69AF;width:100%;">
+   <div class="row" style="background-color:#0D69AF;">
      <div class="hidden-xs col-md-3 col-sm-6 "></div> 
 
      <div class="col-xs-12 col-sm-6 col-md-3" >
@@ -68,12 +68,9 @@
  </div>
 </div><!--jumbotron-->
 
- <div class="row">
-   <%= image_tag("rphg1.jpg", :class =>"img-responsive hidden-xs",alt: "Logo_Missing",:style =>"z-index:1;opacity:0.70;") %>
- </div>
  <div class="row hidden-xs" style="background-color:#0D69AF;">
   <div class="col-md-1 col-lg-4 ">&nbsp</div>
-   <div class="col-lg-6 col-md-10"><h1 style="Times New Roman, Times, serif;color:#fff;font-weight:bold;">What Sellers Say </h1>
+   <div class="col-lg-6 col-md-10"><h1 style="Times New Roman, Times, serif;color:#fff;font-weight:bold;">What Students Say </h1>
    </div>
   <div class="col-md-1 col-lg-4 ">&nbsp</div>
   </div>
